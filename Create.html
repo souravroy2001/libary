@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Book or Member</title>
+    <link rel="stylesheet" href="create_style.css" />
+    <link rel="shortcut icon" href="./image/Sourav Roy Favicon Red Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div><a href="./index.html" title="If you click you will be redirect to Home page"><img src="./image/Sourav Roy White Red Logo.png" alt="Sourav Logo"></a></div>
+        <div>
+            <ul>
+                <li><a href="./index.html" title="If you click you will be redirect to Home page">Home</a></li>
+                <li><a href="./Create.html" title="Current page is Create">Create</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="container">
+
+        <div id="main">
+
+            <div>
+
+                <h1>Create Book or Member</h1>
+
+                <form action="" id="fromData">
+
+                    <label for="">Select a option</label>
+                    <select name="select_for_creating" id="selector" required  oninput="onChangeCreate()">
+                        <option value="" selected disabled>Select a option</option>
+                        <option value="Book">Book</option>
+                        <option value="Member">Member</option>
+                    </select>
+
+                    <div id="body">
+                        <!-- For Book Creating -->
+                        <div id="book">
+                            <select name="forId" id="bookId">
+                                <option value="1" selected disabled>3</option>
+                            </select><br /><br />
+
+                            <label for="">Book Title</label>
+                            <input type="text" placeholder="Write a title for your Book" id="bookTitle"/><br /><br />
+
+                            <label for="">Author Name</label>
+                            <input type="text" placeholder="Write author name" id="authorName"/><br /><br />
+
+                            <label for="">Genre Name</label>
+                            <input type="text" placeholder="Write genre name" id="genreName"/><br /><br />
+
+                            <label for="">Published Year</label>
+                            <input type="number" placeholder="Enter published year" id="publishedYear"/><br /><br />
+
+                            <label for="availability">Book availability</label>
+                            <select name="availability" id="availability">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select><br /><br />
+
+                        </div>
+
+                        <!-- For Member Creating -->
+
+                        <div id="member">
+                            <select name="forId" id="memberId">
+                                <option value="1" selected disabled>3</option>
+                            </select><br /><br />
+                            <label for="">Member Name</label>
+                            <input type="text" placeholder="Write member name" id="memberName"/><br /><br />
+                            <label for="">Membership Date</label>
+                            <input type="date" id="todayDAte" /><br /><br />
+                            <label for="availability">Member active</label>
+                            <select name="active" id="active">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select><br /><br />
+                        </div>
+                    </div>
+
+                    <input type="submit" value="What do I create" id="submit">
+
+                </form>
+            </div>
+            <span id="message"></span>
+        </div>
+    </div>
+</body>
+<script src="create.js"></script>
+
+</html>

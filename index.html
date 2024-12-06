@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/Sourav Roy Favicon Red Logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90fd2fc1ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div><a href="./index.html" title="If you click you will be redirect to Home page"><img src="./image/Sourav Roy White Red Logo.png" alt="Sourav Logo"></a></div>
+        <div>
+            <span id="searchSpan"><input type="search" name="search" id="search" placeholder=" "> <i class="fa-solid fa-magnifying-glass" style="color: #333;" id="searchIcon"></i></span>
+            <ul>
+                <li><a href="./index.html" title="Current page is the Home page">Home</a></li>
+                <li><a href="./Create.html" title="If you want to create a Book or Member then Click">Create</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div>
+            <select name="" id="selectOption" title="select a option to see">
+                <option value="normal" selected disabled>Select a option</option>
+                <option value="Book">Book</option>
+                <option value="Member">Member</option>
+            </select>
+            <h1>Welcome to the <span id="selectorName" class="animationText"></span></h1>
+        </div>
+
+        <div id="body">
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
